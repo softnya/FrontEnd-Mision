@@ -18,6 +18,12 @@
     align-items: start !important;
     margin-top: 11px !important;
 }
+.uk-overlay {
+    padding: 10px 30px !important;
+}
+.uk-navbar-dropdown-nav>li>a {
+    color: #999 !important;
+}
 
 .relative {
     position: relative;

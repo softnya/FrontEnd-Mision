@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasteleria</title>
+    <link rel="icon" type="image/x-icon" href="images/icono.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icono.png">
+    <link rel="icon" sizes="192x192" href="images/icono.png">
+
     <link rel="stylesheet" href="includes/design.css" />
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
@@ -28,7 +32,15 @@
                             <ul class="uk-navbar-nav">
                                 <li><a href="index.html">Inicio</a></li>
                                 <li><a href="orders.html">Pedidos</a></li>
-                                <li class="uk-active"><a href="admin.html">Administrador</a></li>
+                                <li class="uk-active">
+                                    <a href="#">Administrador</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="admin-list.html">Pedidos</a></li>
+                                            <li><a href="admin-inv.html">Inventario</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </nav>
@@ -37,13 +49,14 @@
         </div>
     </section>
     <section class="uk-section uk-container" id="uk-content">
-        <h2>Lista de pedidos</h2>
+        <h1 class="uk-text-center">Lista de pedidos</h1>
         <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
             <div>
                 <div class="uk-card uk-card-default uk-card-body">
                     <h3 class="uk-card-title">Pedido 1</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     <button uk-toggle="target: #pedido1" class="uk-button uk-button-primary" type="button">Ver pedido</button>
+                    <div class="uk-badge uk-float-right">$230</div>
                 </div>
             </div>
             <div>
@@ -51,6 +64,7 @@
                     <h3 class="uk-card-title">Pedido 2</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     <button uk-toggle="target: #pedido2" class="uk-button uk-button-primary" type="button">Ver pedido</button>
+                    <div class="uk-badge uk-float-right">$240</div>
                 </div>
             </div>
             <div>
@@ -58,6 +72,7 @@
                     <h3 class="uk-card-title">Pedido 3</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     <button uk-toggle="target: #pedido3" class="uk-button uk-button-primary" type="button">Ver pedido</button>
+                    <div class="uk-badge uk-float-right">$230</div>
                 </div>
             </div>
             <div>
@@ -65,6 +80,7 @@
                     <h3 class="uk-card-title">Pedido 4</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     <button uk-toggle="target: #pedido4" class="uk-button uk-button-primary" type="button">Ver pedido</button>
+                    <div class="uk-badge uk-float-right">$250</div>
                 </div>
             </div>
             <div>
@@ -72,6 +88,7 @@
                     <h3 class="uk-card-title">Pedido 5</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     <button uk-toggle="target: #pedido5" class="uk-button uk-button-primary" type="button">Ver pedido</button>
+                    <div class="uk-badge uk-float-right">$230</div>
                 </div>
             </div>
             <div>
@@ -79,6 +96,7 @@
                     <h3 class="uk-card-title">Pedido 6</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     <button uk-toggle="target: #pedido6" class="uk-button uk-button-primary" type="button">Ver pedido</button>
+                    <div class="uk-badge uk-float-right">$80</div>
                 </div>
             </div>
         </div>
@@ -95,7 +113,13 @@
                         <li><b>Correo electrónico:</b> jhernandez@gmail.com</li>
                         <li><b>Descripción del pastel:</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                     </ul>
-                </div>
+                    <div class="uk-inline uk-background-cover uk-width-1-3@m" style="background-image: url('https://i.imgur.com/nI1Misu.jpeg');">
+                        <img class="uk-invisible" src="https://i.imgur.com/rZZMOdo.jpeg" />
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                            <p>Chocolate<br><b>$230</b></p>
+                        </div>
+                    </div>
+               </div>
                 <div class="uk-modal-footer uk-text-right">
                     <button class="uk-button uk-button-default uk-modal-close" type="button">Cerrar</button>
                 </div>
@@ -114,6 +138,12 @@
                         <li><b>Correo electrónico:</b> laurita34@hotmail.com</li>
                         <li><b>Descripción del pastel:</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                     </ul>
+                    <div class="uk-inline uk-background-cover uk-width-1-3@m" style="background-image: url('https://i.imgur.com/rZZMOdo.jpeg');">
+                        <img class="uk-invisible" src="https://i.imgur.com/rZZMOdo.jpeg" />
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                            <p>Arcoiris<br><b>$240</b></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="uk-modal-footer uk-text-right">
                     <button class="uk-button uk-button-default uk-modal-close" type="button">Cerrar</button>
@@ -133,6 +163,12 @@
                         <li><b>Correo electrónico:</b> lomalo@gmail.com</li>
                         <li><b>Descripción del pastel:</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                     </ul>
+                    <div class="uk-inline uk-background-cover uk-width-1-3@m" style="background-image: url('https://i.imgur.com/nI1Misu.jpeg');">
+                        <img class="uk-invisible" src="https://i.imgur.com/rZZMOdo.jpeg" />
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                            <p>Chocolate<br><b>$230</b></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="uk-modal-footer uk-text-right">
                     <button class="uk-button uk-button-default uk-modal-close" type="button">Cerrar</button>
@@ -152,6 +188,12 @@
                         <li><b>Correo electrónico:</b> acoru.7@live.com</li>
                         <li><b>Descripción del pastel:</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                     </ul>
+                    <div class="uk-inline uk-background-cover uk-width-1-3@m" style="background-image: url('https://i.imgur.com/mLeYehH.jpeg');">
+                        <img class="uk-invisible" src="https://i.imgur.com/rZZMOdo.jpeg" />
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                            <p>Mora azul<br><b>$250</b></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="uk-modal-footer uk-text-right">
                     <button class="uk-button uk-button-default uk-modal-close" type="button">Cerrar</button>
@@ -171,6 +213,12 @@
                         <li><b>Correo electrónico:</b> aropa@hotmail.com</li>
                         <li><b>Descripción del pastel:</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                     </ul>
+                    <div class="uk-inline uk-background-cover uk-width-1-3@m" style="background-image: url('https://i.imgur.com/nI1Misu.jpeg');">
+                        <img class="uk-invisible" src="https://i.imgur.com/rZZMOdo.jpeg" />
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                            <p>Chocolate<br><b>$230</b></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="uk-modal-footer uk-text-right">
                     <button class="uk-button uk-button-default uk-modal-close" type="button">Cerrar</button>
@@ -190,6 +238,12 @@
                         <li><b>Correo electrónico:</b> fonsa99@gmail.com</li>
                         <li><b>Descripción del pastel:</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                     </ul>
+                    <div class="uk-inline uk-background-cover uk-width-1-3@m" style="background-image: url('https://cf.shopee.cl/file/b417f20a87b24b383c78e989c8648820');">
+                        <img class="uk-invisible" src="https://i.imgur.com/rZZMOdo.jpeg" />
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                            <p>Fondant<br><b>$80</b></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="uk-modal-footer uk-text-right">
                     <button class="uk-button uk-button-default uk-modal-close" type="button">Cerrar</button>
@@ -198,7 +252,8 @@
         </div>
     </section>
     <section class="uk-section uk-section-secondary uk-text-center" id="uk-footer">
-        Todos los derechos reservados
+        Todos los derechos reservados &copy;<br>
+        <small>Desarrollado por <a href="https://github.com/softnya" target="_blank">Sergio López Loya</a> para <b>Launch X - Curso Frontend - 2022</b></small>
     </section>
 </body>
 </html>

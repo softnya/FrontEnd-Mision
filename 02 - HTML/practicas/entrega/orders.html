@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasteleria</title>
+    <link rel="icon" type="image/x-icon" href="images/icono.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icono.png">
+    <link rel="icon" sizes="192x192" href="images/icono.png">
+
     <link rel="stylesheet" href="includes/design.css" />
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
@@ -28,7 +32,15 @@
                             <ul class="uk-navbar-nav">
                                 <li><a href="index.html">Inicio</a></li>
                                 <li class="uk-active"><a href="orders.html">Pedidos</a></li>
-                                <li><a href="admin.html">Administrador</a></li>
+                                <li>
+                                    <a href="#">Administrador</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="admin-list.html">Pedidos</a></li>
+                                            <li><a href="admin-inv.html">Inventario</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </nav>
@@ -71,7 +83,7 @@
                         <img class="uk-invisible" src="https://i.imgur.com/rZZMOdo.jpeg" />
                         <input class="uk-checkbox absolute top left" type="checkbox" name="sabor1" value="Chocolate" />
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-                            <p>Chocolate</p>
+                            <p>Chocolate<br><b>$230</b></p>
                         </div>
                     </div>
                 </div>
@@ -80,7 +92,7 @@
                         <img class="uk-invisible" src="https://i.imgur.com/rZZMOdo.jpeg" />
                         <input class="uk-checkbox absolute top left" type="checkbox" name="sabor2" value="Zanahoria" />
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-                            <p>Zanahoria</p>
+                            <p>Zanahoria<br><b>$190</b></p>
                         </div>
                     </div>
                 </div>
@@ -89,7 +101,7 @@
                         <img class="uk-invisible" src="https://i.imgur.com/rZZMOdo.jpeg" />
                         <input class="uk-checkbox absolute top left" type="checkbox" name="sabor3" value="Arcoiris" />
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-                            <p>Arcoiris</p>
+                            <p>Arcoiris<br><b>$240</b></p>
                         </div>
                     </div>
                 </div>
@@ -98,7 +110,7 @@
                         <img class="uk-invisible" src="https://i.imgur.com/rZZMOdo.jpeg" />
                         <input class="uk-checkbox absolute top left" type="checkbox" name="sabor4" value="Vainilla" />
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-                            <p>Vainilla</p>
+                            <p>Vainilla<br><b>$230</b></p>
                         </div>
                     </div>
                 </div>
@@ -107,7 +119,7 @@
                         <img class="uk-invisible" src="https://i.imgur.com/rZZMOdo.jpeg" />
                         <input class="uk-checkbox absolute top left" type="checkbox" name="sabor5" value="Mora azul" />
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-                            <p>Mora azul</p>
+                            <p>Mora azul<br><b>$250</b></p>
                         </div>
                     </div>
                 </div>
@@ -119,7 +131,7 @@
                         <img class="uk-invisible" src="https://i.imgur.com/rZZMOdo.jpeg" />
                         <input class="uk-checkbox absolute top left" type="checkbox" name="decora1" value="Letreros" />
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-                            <p>Letreros</p>
+                            <p>Letreros<br><b>$30</b></p>
                         </div>
                     </div>
                 </div>
@@ -128,7 +140,7 @@
                         <img class="uk-invisible" src="https://i.imgur.com/rZZMOdo.jpeg" />
                         <input class="uk-checkbox absolute top left" type="checkbox" name="decora2" value="Flores" />
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-                            <p>Flores</p>
+                            <p>Flores<br><b>$80</b></p>
                         </div>
                     </div>
                 </div>
@@ -137,7 +149,7 @@
                         <img class="uk-invisible" src="https://i.imgur.com/rZZMOdo.jpeg" />
                         <input class="uk-checkbox absolute top left" type="checkbox" name="decora3" value="Fondant" />
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-                            <p>Fondant</p>
+                            <p>Fondant<br><b>$80</b></p>
                         </div>
                     </div>
                 </div>
@@ -146,7 +158,7 @@
                         <img class="uk-invisible" src="https://i.imgur.com/rZZMOdo.jpeg" />
                         <input class="uk-checkbox absolute top left" type="checkbox" name="decora4" value="Frutales" />
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-                            <p>Frutales</p>
+                            <p>Frutales<br><b>$100</b></p>
                         </div>
                     </div>
                 </div>
@@ -155,7 +167,7 @@
                         <img class="uk-invisible" src="https://i.imgur.com/rZZMOdo.jpeg" />
                         <input class="uk-checkbox absolute top left" type="checkbox" name="decora5" value="Imagenes" />
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-                            <p>Imágenes</p>
+                            <p>Imágenes<br><b>$120</b></p>
                         </div>
                     </div>
                 </div>
@@ -168,7 +180,8 @@
         </form>
     </section>
     <section class="uk-section uk-section-secondary uk-text-center" id="uk-footer">
-        Todos los derechos reservados
+        Todos los derechos reservados &copy;<br>
+        <small>Desarrollado por <a href="https://github.com/softnya" target="_blank">Sergio López Loya</a> para <b>Launch X - Curso Frontend - 2022</b></small>
     </section>
 </body>
 </html>
