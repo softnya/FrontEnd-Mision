@@ -72,7 +72,11 @@ body {
     background-color: #A284DA !important;
 }
 .uk-section-primary {
-    background-color: #b51a2b !important;
+    background: rgb(205,35,54) !important;
+    background: -moz-radial-gradient(circle, rgba(205,35,54,1) 0%, rgba(157,19,33,1) 49%, rgba(205,64,79,1) 100%) !important;
+    background: -webkit-radial-gradient(circle, rgba(205,35,54,1) 0%, rgba(157,19,33,1) 49%, rgba(205,64,79,1) 100%) !important;
+    background: radial-gradient(circle, rgba(205,35,54,1) 0%, rgba(157,19,33,1) 49%, rgba(205,64,79,1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cd2336",endColorstr="#cd404f",GradientType=1) !important;
 }
 .uk-button-primary:hover,
 .uk-button-primary:active {
