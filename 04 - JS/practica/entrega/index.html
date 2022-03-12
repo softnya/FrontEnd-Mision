@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeAPI Launch X</title>
+    <link rel="icon" type="image/x-icon" href="images/pokeball.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/pokeball.png">
+    <link rel="icon" sizes="192x192" href="images/pokeball.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="includes/design.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="uk-section uk-section-primary" id="uk-header">
+        <div class="uk-container">
+            <h1 class="uk-text-center">
+                <img src="images/title.png" class="title" />
+            </h1>
+        </div>
+    </section>
+    <section class="uk-section uk-height-viewport" id="uk-fullwidth" style="padding: 0px !important;">
+        <div class="uk-grid-collapse uk-height-viewport uk-flex uk-flex-middle" uk-grid>
+            <div class="uk-width-1-3@m">
+                <div data-pokedex><img src="images/pokeball.png" class="uk-width-1-1" /></div>
+            </div>
+            <div class="uk-width-2-3@m">
+                <div class="opaque panel rounded uk-margin-right uk-margin-left">
+                    <div class="uk-flex uk-flex-wrap uk-flex-center uk-child-width-1-6@m uk-child-width-1-4@s" uk-grid data-container>
+                    </div>
+                </div>
+                <div class="uk-flex uk-flex-center uk-child-width-1-3" uk-grid data-container-pagination>
+                    <div>
+                        <div class="uk-button uk-button-secondary" onclick="prevTablePokedex()" data-prev data-url="">
+                            <span uk-icon="chevron-double-left"></span>
+                            Anterior
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-text-center uk-text-bold" data-pagination></div>
+                    </div>
+                    <div class="uk-text-right">
+                        <div class="uk-button uk-button-secondary" onclick="nextTablePokedex()" data-next data-url="">
+                            Siguiente
+                            <span uk-icon="chevron-double-right"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="uk-section uk-section-secondary uk-text-center" id="uk-footer">
+        Todos los derechos reservados &copy;<br>
+        <small>Desarrollado por <a href="https://github.com/softnya" target="_blank">Sergio López Loya</a> para <b>Launch X - Curso Frontend - 2022</b></small><br>
+        <small>Integrado con <a href="https://pokeapi.co" target="_blank">pokeapi</a></small>
+    </section>
+    <div id="moreinfo" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <h2 class="uk-modal-title uk-text-uppercase modal-title">
+                <img src="images/pokeball.png" class="small-pokeball" />
+                <span data-name>{pokemon}</span>
+            </h2>
+            <div data-info>{info}</div>
+            <p class="uk-text-right">
+                <button class="uk-button uk-button-primary uk-modal-close" type="button">Cerrar</button>
+            </p>
+        </div>
+    </div>
+    <script src="includes/pokedex.js"></script>
+</body>
+</html>
