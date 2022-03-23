@@ -27,8 +27,14 @@
         </div>
     </section>
     <section class="uk-section uk-height-viewport" id="uk-fullwidth" style="padding: 0px !important;">
-        <div class="uk-grid-collapse uk-height-viewport uk-flex uk-flex-middle" uk-grid>
+        <div class="uk-grid-collapse uk-height-viewport uk-flex uk-flex-middle uk-form" uk-grid>
             <div class="uk-width-1-3@m">
+                <div class="uk-margin">
+                    <div class="uk-inline uk-margin-left" style="display: block;">
+                        <div class="uk-icon-button" data-search-btn onclick="findPokemon()" uk-icon="icon: search"></div>
+                        <input class="uk-input uk-width-1-1" placeholder="Write a Pokemon name (ex. pikachu)" data-search-input type="text">
+                    </div>
+                </div>
                 <div data-pokedex><img src="images/pokeball.png" class="uk-width-1-1" /></div>
             </div>
             <div class="uk-width-2-3@m">
@@ -36,30 +42,30 @@
                     <div class="uk-flex uk-flex-wrap uk-flex-center uk-child-width-1-6@m uk-child-width-1-4@s" uk-grid data-container>
                     </div>
                 </div>
-                <div class="uk-flex uk-flex-center uk-child-width-1-3" uk-grid data-container-pagination>
-                    <div>
+                <div class="uk-flex uk-flex-center" uk-grid data-container-pagination>
+                    <!--<div class="uk-width-auto">
                         <div class="uk-button uk-button-secondary" onclick="prevTablePokedex()" data-prev data-url="">
                             <span uk-icon="chevron-double-left"></span>
-                            Anterior
+                            Prev
                         </div>
-                    </div>
-                    <div>
+                    </div>-->
+                    <div class="uk-width-expand">
                         <div class="uk-text-center uk-text-bold" data-pagination></div>
                     </div>
-                    <div class="uk-text-right">
+                    <!--<div class="uk-text-right uk-width-auto">
                         <div class="uk-button uk-button-secondary" onclick="nextTablePokedex()" data-next data-url="">
-                            Siguiente
+                            Next
                             <span uk-icon="chevron-double-right"></span>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
     </section>
     <section class="uk-section uk-section-secondary uk-text-center" id="uk-footer">
-        Todos los derechos reservados &copy;<br>
-        <small>Desarrollado por <a href="https://github.com/softnya" target="_blank">Sergio López Loya</a> para <b>Launch X - Curso Frontend - 2022</b></small><br>
-        <small>Integrado con <a href="https://pokeapi.co" target="_blank">pokeapi</a></small>
+        All rights reserver &copy;<br>
+        <small>Developed by <a href="https://github.com/softnya" target="_blank">Sergio López Loya</a> for <b>Launch X - Frontend - 2022</b></small><br>
+        <small>Integrated with <a href="https://pokeapi.co" target="_blank">pokeapi</a></small>
     </section>
     <div id="moreinfo" uk-modal>
         <div class="uk-modal-dialog uk-modal-body">
@@ -69,7 +75,7 @@
             </h2>
             <div data-info>{info}</div>
             <p class="uk-text-right">
-                <button class="uk-button uk-button-primary uk-modal-close" type="button">Cerrar</button>
+                <button class="uk-button uk-button-primary uk-modal-close" type="button">Close</button>
             </p>
         </div>
     </div>

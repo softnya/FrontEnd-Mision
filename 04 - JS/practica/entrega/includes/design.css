@@ -82,8 +82,21 @@ body {
 .uk-button-primary:active {
     background-color: #886ac2 !important;
 }
-
-
+.uk-inline .uk-icon-button {
+    position: absolute;
+    right: 0px;
+    border-radius: 0;
+    height: 40px;
+}
+.uk-table-small td, .uk-table-small th {
+    padding: 1px 5px !important;
+}
+.uk-pagination li > * {
+    color: #ffffff !important;
+}
+.uk-pagination li.uk-active > * {
+        color: #b51a2b !important;
+}
 
 
 
